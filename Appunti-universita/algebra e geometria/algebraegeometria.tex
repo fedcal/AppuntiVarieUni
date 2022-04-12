@@ -1,0 +1,204 @@
+\documentclass{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+\usepackage{circuitikz}
+\usepackage{pifont}
+\usepackage{imakeidx}
+\usepackage{verbatim}
+\usepackage{dsfont}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{upgreek}
+\usepackage{tasks}
+\usepackage{exsheets}
+\usepackage{pgfplots}
+\usepackage{amsthm}
+
+\SetupExSheets[question]{type=exam}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1000,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\linespread{1.2} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\title{Appunti di Algebra e geometria}
+\author{Nicola Ferru}
+\date{}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+
+\begin{document}
+\maketitle
+\tableofcontents
+\listoftables
+\listoffigures
+\input{pag/premesse.tex}
+\input{pag/simboli.tex}
+\chapter{Vettori}
+\section{Spazio Vettoriale}
+\newtheorem{SpaVet}{Spazio Vettoriale}
+\begin{SpaVet}
+	Uno spazio vettoriale reale (R-spazio vettoriale) è un insieme \textit{V} in
+	cui sono definite un'operazione di \texttt{SOMMA} tra elementi di
+	\textit{V} e un'operazione di \texttt{Prodotto tra un reale} e un elemento
+	di V che soddisfano 8 proprietà:
+\end{SpaVet}
+\begin{enumerate}
+	\item La somma è associativa quando $\forall v_1, \text{ } v_2, \text{ } v_3 
+		\in V$ $\left(v_1+v_2\right)+v_3=v_1+\left(v_2+v_3\right)$;
+	\item La somma è commutativa quando $\forall v_1, v_2 \in V\text{ }
+		v_1+v_2=v_2+v_1$
+	\item Esistenza elemento neutro 0 se e solo se $\forall v\in V \text{ }
+		v+0=0+v=v$
+	\item Esistenza opposto $-v$ se e solo se $\forall v \in V \text{ }
+		v+(-v)=(-v)+v=0$
+	\item Il prodotto per uno scalare è assoluto quando $\forall c_1,c_2 \in
+		R, \forall v\in V \text{ } c_1(c_2v)=(c_1c_2)v$
+	\item Il prodotto per uno scalare è distributiva quando $\forall c_1,c_2 \in
+		R, \forall v\in V \text{ } (c_1+c_2)v=c_1v+c_2v$
+	\item Il prodotto per uno scalare è distributiva quando $\forall c \in
+		R, \forall v_1, v_2\in V \text{ }c(v_1+v_2)=cv_1+cv_2$
+	\item Esistenza elemento neutro 1 quando $\forall v\in V \text{ } 1v=v$
+\end{enumerate}
+\begin{description}
+	\item[ES:] $V_0^2\text{ } V_0^3$
+	\item[ES:] $f:\mathds{R}\to \mathds{R}\text{ } x^2, \text{ } g(x)=e^x, \text{ } f(x)+g(x)=x^2+e^x\text{ } 3f(x)=3x^2$
+	\item[ES:] $\mathds{R}^n$ n-uple di numeri reali
+	\[
+	\begin{matrix}
+		\begin{bmatrix}
+			x_1\\
+			x_2\\
+			\vdots\\
+			x_n
+		\end{bmatrix}+\begin{bmatrix}
+			y_1\\
+			y_2\\
+			\vdots\\
+			y_n
+		\end{bmatrix}=\begin{bmatrix}
+			x_1+y_1\\
+			x_2+y_2\\
+			\vdots\\
+			x_n+y_n
+		\end{bmatrix}&C\in\mathds{R} \text{ } c\begin{bmatrix}
+			x_1\\
+			x_2\\
+			\vdots\\
+			x_n
+		\end{bmatrix}=\begin{bmatrix}
+			cx_1\\
+			cx_2\\
+			\vdots\\
+			cx_n
+		\end{bmatrix}
+	\end{matrix}
+	\]
+	\item[ES:] $\mathds{R}_n[x]$ polinomi di grado $\leq n$ nella variabile $x$ a coefficiente reale
+		\begin{itemize}
+			\item $p(x)=a_0+a_1x+a_2x^2+\dots+a_nx^n$
+			\item $q(x)=b_0+b_1x+b_2x^2+\dots+b_nx^n$
+		\end{itemize}
+	\item[ES:] $\mathds{R}[x]$ polinomio di grado qualsiasi
+		\begin{equation*}
+			\begin{matrix}
+				p(x)+q(x)=a_0+b_0+(a_1+b_1)x+\dots+(a_n+b_n)x^n\\
+				c\in\mathds{R},\text{ } cp(x)=ca_0+ca_1x+ca_2x^2+\dots+ca_nx^n
+			\end{matrix}
+		\end{equation*}
+\end{description}
+
+\chapter {Numeri Complessi}
+\newtheorem{NumComp}{Numeri reali}
+\begin{NumComp}
+	Un numero complesso è definito come un numero della forma $x+iy$, con x e y numeri reali e i una
+	soluzione dell'equazione $x^2=-1$ detta unità immaginaria. i numeri reali
+	sono
+\end{NumComp}
+\section{Operazioni con Numeri complessi}
+\begin{enumerate}
+\item Modulo e distanza
+	\begin{equation}
+		\abs{z}=\sqrt{x^2+y^2}
+	\end{equation}
+	Il valore assoluto (modulo) ha proprietà queste proprietà:
+	\begin{equation*}
+		\abs{z+w}\geq \abs{z}+\abs{w}, \text{ } \abs{zw}=\abs{z}\abs{w}, \text{ } \left|\frac{z}{w}\right|=\frac{\abs z}{\abs w}
+	\end{equation*}
+	Valide per tutti i numeri complessi $z$ e $w$. La prima proprietà è una versione della disuguaglianza triangolare.
+
+\end{enumerate}
+\printindex
+\end{document}
