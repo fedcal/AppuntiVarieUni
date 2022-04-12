@@ -1,0 +1,18 @@
+\documentclass{standalone}
+
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{tabularx}
+
+% arara: pdflatex
+% arara: latexmk: { clean: partial }
+\begin{document}
+\begin{tabularx}{\textwidth}{XX}
+		Grammatica & Linguaggio derivato \\
+    \midrule
+        \(S \to aSb\) \newline
+        \(S \to \varepsilon\)
+        &
+        \(\{a^nb^n \mid n>0\} \cup \{\varepsilon\} = \{a^nb^n \mid n \ge 0\}\)
+\end{tabularx}
+\end{document}

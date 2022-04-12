@@ -1,0 +1,43 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[ruled,vlined]{algorithm2e}
+
+% arara: pdflatex
+% arara: latexmk: { clean: partial }
+\begin{document}
+    \begin{algorithm}[H]
+        \label{alg:nfa-sim-line4}
+        \DontPrintSemicolon
+        \LinesNotNumbered
+        \LinesNumberedHidden
+
+        \SetKwData{t}{\textbf{true}}
+        \SetKwData{f}{\textbf{false}}
+        \SetKwData{not}{\textbf{not}}
+
+        \SetKwData{Symb}{symbol}
+        \SetKwData{CS}{\(currentStack\)}
+        \SetKwData{NS}{\(nextStack\)}
+        \SetKwArray{aOn}{alreadyOn}
+        \SetKwFunction{Push}{push}
+        \SetKwFunction{Pop}{pop}
+        \SetKwFunction{Moven}{\(\textrm{move}_n\)}
+        \SetKwFunction{Closure}{\(\varepsilon\)-chiusura}
+
+        \ForEach{t \(\in\) \CS} {
+            \ForEach{u \(\in\) \Moven{t, \Symb}}{
+                \If{\not \aOn{u}} {
+                    \Closure{u, \NS}\;
+                }
+            }
+            \CS.\Pop{t}\;
+        }
+
+        \ForEach{s \(\in\) \NS} {
+            \NS.\Pop{s}\;
+            \CS.\Push{s}\;
+            \aOn{s} = \f\;
+        }
+        \caption{Dettaglio di \texttt{simulazioneNFA(NFA \(\mathcal{N}\), \textsc{Word} \(w\))} (riga \(4\))}
+    \end{algorithm}
+\end{document}

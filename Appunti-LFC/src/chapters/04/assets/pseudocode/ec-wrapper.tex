@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[ruled,linesnumbered,vlined]{algorithm2e}
+
+% arara: pdflatex
+% arara: latexmk: { clean: partial }
+\begin{document}
+    \begin{algorithm}[H]
+        \label{alg:ec-wrapper}
+        \DontPrintSemicolon
+
+        \SetKwData{t}{\textbf{true}}
+        \SetKwData{f}{\textbf{false}}
+        \SetKwData{not}{\textbf{not}}
+        
+        \SetKwArray{aOn}{alreadyOn}
+        \SetKwFunction{Push}{push}
+        \SetKwFunction{Moven}{\(\textrm{move}_n\)}
+        \SetKwFunction{Closure}{\(\varepsilon\)-chiusura}
+
+        \textsc{Stack} \(S\) = Stack()\;
+
+        \ForEach{\( i = 1\) \KwTo \( |S| \)} {
+            \aOn{i} = \f\; 
+        }
+        \Closure{t, S}
+        
+        \caption{Wrapper per il calcolo della \(\varepsilon\)-chiusura}
+    \end{algorithm}
+\end{document}

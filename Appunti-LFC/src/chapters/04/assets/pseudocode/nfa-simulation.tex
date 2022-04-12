@@ -1,0 +1,42 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+% arara: pdflatex
+% arara: latexmk: { clean: partial }
+\begin{document}
+    \begin{algorithm}[H]
+        \label{alg:nfa-simulation}
+        \DontPrintSemicolon
+
+        \SetKwData{t}{\textbf{true}}
+        \SetKwData{f}{\textbf{false}}
+        % \SetKwData{not}{\textbf{not}}
+        \SetKwData{mrk}{\texttt{\$}}
+        \SetKwData{noteq}{\(\neq\)}
+
+        \SetKwData{States}{states}
+        \SetKwData{Symb}{symbol}
+        \SetKwFunction{Closure}{\(\varepsilon\)-chiusura}
+        \SetKwFunction{NC}{nextChar}
+        \SetKwFunction{Moven}{\(\textrm{move}_n\)}
+
+        
+
+        \States = \Closure{\(\{s_0\}\)}\;
+        \Symb = \NC{}\;
+        \While{\Symb \noteq \mrk} {
+            \States = \Closure{\(\bigcup_{t \in \textrm{\States}}\) \Moven{t, \Symb}}\;
+            \Symb = \NC{}\;
+        }
+        \eIf{\States \(\cap \textrm{ } F\) \noteq \(\emptyset\)}
+            {
+                \Return{\t}\;
+            }
+            {  
+                \Return{\f}\;
+            }
+
+        \caption{\textbf{boolean} SimulazioneNFA(NFA \(\mathcal{N}\), \textsc{Word} \(w\))}
+    \end{algorithm}
+\end{document}
