@@ -1,0 +1,251 @@
+
+\chapter{Problemi di usabilità}
+
+	\section{Problemi persistenti}
+		Sono i problemi gravi fortemente connessi alla tecnologia e che nel tempo non cambieranno.
+	
+		\subsection{Navigazione}
+			Il problema del navigare nel web odierno è la possibilità di perdersi: \emph{lost in navigation}, ossia la presa di coscienza dell'utente che capisce di essersi perso. Fortunatamente, se opportunamente inserito, l'asse informativo Where risolve questo tipo di problema.
+			\subparagraph*{Morale:}
+			\begin{quote}
+				``Gli utenti devono essere coscienti di dove sono e dove devono andare.''
+			\end{quote}
+			
+			\subsubsection{Dove sono, dove ero e dove sarò}
+				Nonostante l'uso di \emph{breadcrumb} e una comunicazione opportuna dell'asse Where opportunamente comunicato all'utente ciò non basta. Può infatti capitare che l'utente si ritrovi in pagine già visitate e deva ricordarsi i percorsi già fatti. Lo sforzo diventa pesante e crea malumore. Per non far affaticare l'utente esiste al giorno d'oggi una consuetudine non standard riconosciuta in tutto il web che è quella di colorare diversamente i colori dei link già visitati. Ciò fu implementato da Netscape Navigator e da allora è diventata una buona norma per garantire maggior usabilità.
+				Il 75\% dei siti web usa il cambio colore dei link già visitati.
+			\subparagraph*{Morale:}
+			\begin{quote}
+				``All'utente pesa meno la grafica rispetto alla funzionalità e allo sforzo.''
+			\end{quote}	
+			
+		\subsection{I movimenti dell'utente}
+			Le azioni generali per interagire che può utilizzare l'utente sono:
+			\begin{itemize}
+				\item il \emph{click}.
+				\item il \emph{back} (pulsante prezioso, presto vedremo il perché).
+			\end{itemize}
+			Secondo gli studi sul comportamento degli utenti sul web si è scoperto che ad essi piace navigare all'indietro, anzi lo adorano. Prendiamo ad esempio la visita di un sito in cui si sia andati in profondità di 4 livelli e si deva tornare alla homepage. Gli utenti a questo punto spesso invece di cliccare una volta  il link diretto (magari sul logo del sito) preferiscono di gran lunga utilizzare il pulsante \emph{back} ripetutamente.
+			Si arriva fino a 7 click del pulsante \emph{back} anche in presenza di un link diretto. È lo stesso comportamento che si tiene con il telecomando della propria TV. A volte basterebbe premere i pulsanti numerici per passare ad un diverso canale ma si preferisce spostarsi di un canale alla volta usando un unico bottone invece di due o più bottoni numerici. Questo uso comune è noto come \emph{backtracking}.
+			\subparagraph*{Morale:}
+			\begin{quote}
+				``La pulsione primaria dell'utente non è quella di minimizzare il tempo ma quella di minimizzare lo sforzo.''
+			\end{quote}
+			L'uomo ha orrore nello sforzo previsto nel futuro e tende a fare cose folli e illogiche per allontanare tale sforzo (\emph{algoritmo della carta igienica}). Quindi, gli utenti minimizzano lo sforzo computazionale e per fare ciò ricorrono all'uso del pulsante \emph{back} perché:
+			\begin{itemize}
+				\item non serve ricordarsi il percorso;
+				\item non bisogna trovare il tasto \emph{back}, (è sempre lì garantito).
+			\end{itemize}
+			Da ciò ovviamente ne consegue che non bisogna \textbf{mai togliere l'uso del \emph{back button}}.
+			
+		\subsection{Nuova finestra? No, grazie}
+			Un altro problema persistente è quello di aprire una nuova finestra di navigazione anziché usare sempre la stessa.  Esistono due tipi di finestre, il tab e la nuova finestra vera e propria. L'aprire una nuova finestra ha gravi conseguenze per l'utente medio:
+			\begin{itemize}
+				\item Non c'è più la cronologia di navigazione (addio \emph{back button}!
+				\item Avere finestre diverse aperte confonde l'utente medio.
+			\end{itemize}
+			Analizziamo nel dettaglio che cosa succede all'apertura di una nuova finestra. 
+			Prima di tutto, questa si sovrappone alla navigazione esistente provocando panico per l'utente medio. Se non dovesse sovrapporsi, l'utente medio seleziona quella bassa lasciando l'altra finestra aperta, di conseguenza il link della pagina già aperta non funziona più perché la pagina risulta aperta ma di ciò l'utente medio non ne è a conoscenza.
+			
+			\subsubsection{Un problema correlato: i pop-up}
+				Un problema che si collega molto con l'apertura di una nuova finestra è quello dei pop-up. Piccole finestre che si aprono senza il permesso dell'utente.
+		
+		\subsection{Convenzioni violate}
+			Le convenzioni non sono standard ma semplicemente la prassi, ciò che fanno tutti e per questo più familiari all'utente. 
+			
+			\paragraph{Legge di Jacob}
+			\begin{quote}
+				``Gli utenti spedono la maggior parte del tempo su altri siti web.''
+			\end{quote}
+			Gli utenti sono abituati a navigare in altri siti quindi non abbiamo il potere di fare tutto di testa nostra solo perché è il "nostro" sito.
+			
+		\subsection{Altri problemi: What non rispettato}
+			Mai usare linguaggio vuoto o con poco contenuto/slogan. L'utente che visita una pagina si aspetta contenuto non ``politichese'' (cit.).
+			
+			\paragraph{Problema correlato: la forma del testo}
+				Il contenuto di una pagina web conta ma il testo deve sempre avere una forma semplice, chiara e sintetica; la lettura su schermo è diversa dalla normale lettura su carta. Mai usare testo difficile e monolitico che spesso, purtroppo, è usato nei siti delle pubblica amministrazione. Il testo usato su altri media non è adatto al web. Alcuni accorgimenti per evitare ciò è quello di tagliare testo:
+				\begin{itemize}
+					\item Se abbiamo del normale testo da inserire in una pagina bisogna \textbf{dimezzare} per far sì che diventi testo web.
+					\item Se abbiamo testo generico, il testo web è circa \textbf{un quarto}.
+				\end{itemize}
+				Un altro suggerimento per scrivere testo adatto al web è quello di cominciare con la conclusione e successivamente espandere.
+	
+	\section{Problemi non-persistenti / Il contenuto}
+	
+		\subsection{Splash page}
+			Le \emph{splash page} Sono le pagine di presentazione che sostituiscono la homepage. Evitarle a tutti i costi, fanno perdere tempo all'utente soprattutto se sono  animate. Molto meglio una homepage semplice che comunica in modo adeguato i 6 assi principali.
+		\subsection{Richieste di registrazione}
+			Altra cosa da evitare: mai richiedere informazioni personali all'utente, soprattutto mai richiedere una registrazione prematura. Su 10 utenti appena l'1,1 è disposto a dare la propria mail. I motivi sono:
+			\begin{itemize}
+				\item l'utente deve sapere se vale la pena o no (problema di \emph{trust}).
+				\item La registrazione richiede sforzo computazionale (nuova login e password!).
+			\end{itemize}
+			Alcuni siti arrivano pure a bloccare la prima visita con un pop-up richiedendo l'iscrizione. Come può un utente in questo modo capire se fidarsi on se non li è lasciata opportunità di visitare prima il sito? Ogni richiesta di registrazione deve avvenire dopo aver convinto l'utente.
+			
+		
+		\subsection{Lo scrolling maledetto}
+			Parliamo di \emph{scroll} verticale. I dati mostrano che in media gli utenti "\emph{scrollano}" 1.3 schermi, questo significa che in totale la parte visualizzata di una pagina corrisponde a 2.3 schermi, tutto quello che viene dopo (in media) non viene visto. Per cui, attenzione alla struttura del layout della pagina e alla posizione dei contenuti.
+			\begin{itemize}
+				\item Nella home page solo il 23\% effettua lo \emph{scroll}.
+				\item Nelle pagine interne il 42\%.
+				\item Visite ripetute alla home page riducono l'uso dello \emph{scroll} al 14\%.
+			\end{itemize}
+			Riportiamo l'esempio da non imitare dell'attuale (07/02/2016) pagina di presentazione dell'iPod nano: \href{http://www.apple.com/it/ipod-nano/}{www.apple.com/ipod-nano}. Alcune osservazioni:
+			\begin{itemize}
+				\item All'apertura la figura in primo piano è tagliata (potrebbe essere un modo per incoraggiare lo scroll).
+				\item Il testo anche se conciso non dice nulla di utile all'utente.
+				\item La pagina è composta da 14 (!!!) \emph{scroll}.
+			\end{itemize}
+			
+			\subsubsection{Taglia dello schermo}
+				Un gran gratta capo di oggi per i siti web è la taglia dello schermo (risoluzione), ad oggi sono numerosissime. Negli anni passati 1024x768 era una taglia di riferimento ma con l'avvenuta dei netbook (1014x600 massima) il trend è cambiato. Inoltre non è detto che tutti massimizzino la finestra per cui statisticamente la taglia più sicura su cui affidarsi è la 800x600. Con il mobile le cose peggiorano, non conta più la taglia dei pixel (risoluzione) ma dello schermo vero e proprio, esistono infatti piccoli schermi con risoluzioni alte.
+				Per risolvere questo problema troppo spesso si è ricorso al \emph{frozen layout} ossia fissare il design per una taglia con il risultato di avere effetti disastrosi con le taglie più grandi. Se si fissa l'asse orizzontale otterremo infatti con uno schermo grande una pagina piccola, contenuta e con ovvio spreco di spazio, mentre con un schermo piccolo otterremo l'odiato \emph{scroll} orizzontale.
+				
+			\subsubsection{Scrolling orizzontale}
+				Lo \emph{scroll} orizzontale è odiato dagli utenti ed è molto peggio del verticale perché:
+				\begin{itemize}
+					\item non è comune
+					\item e non rispetta la normativa classica del testo.	
+				\end{itemize}
+				Nella lettura l'asse delle ascisse è fissato mentre viene effettuato lo \emph{scroll} sull'asse delle ordinate con gli occhi. Inoltre avere entrambi gli \emph{scroll} porta a dover gestire uno spazio di 2 dimensioni con logica conseguenza di richiedere più sforzo computazionale.
+			
+			\subsubsection{People do scroll}
+				Potrebbe essere interessante approfondire la questione dello \emph{scroll}. Da un lato abbiamo visto che lo \emph{scroll} è uno sforzo in più richiesto all'utente ma il tempo passa e il comportamento e le abitudini degli utenti possono cambiare (soprattutto con il "boom" mobile). Ci sono molti studi che indicano che gli utenti sono pronti a fare lo sforzo di \emph{scroll} se il layout lo incoraggia. Ulteriori approfondimenti \href{http://it.uxmyths.com/post/28647124262/mito-3-le-persone-non-scrollano}{uxmyths.com/people-do-scroll}.
+				
+		\subsection{Lo sforzo computazionale spiegato da Engelbart}
+			Abbiamo parlato nella sezione La storia del Web (\url{https://www.youtube.com/watch?v=1MPJZ6M52dI}) della straordinaria invenzione di Douglas Engelbart dove oltre ad il primo mouse della storia si vedeva una tastiera da 5 tasti. Essa permetteva di memorizzare fino a 31 combinazioni di tasti associate ad un evento sulla macchina. Questa tecnologia non è sopravvissuta proprio per il troppo sforzo computazionale richiesto. Per questo motivo per ogni cosa chiedetevi sempre qual è lo sforzo che un utente deve compiere e cercate di minimizzarlo, l'uomo si muove sempre verso quella direzione.
+		
+		\subsection{Bloated design}
+			Il \emph{bloated design}, letteralmente design gonfiato, è un altro tipico errore che abita il web odierno. Il \emph{bloated design} si ha quando il sito presenta troppi effetti, questo risulta essere \textbf{statisticamente fastidioso} poiché aumenta lo sforzo computazionale.
+			Nella storia del web questo si è presentato con la lotta tra i \emph{browser} dove si creavano comandi con effetti bizzarri e inutili per l'utenza. Alcuni anni dopo, un comando di questi: il \emph{blink tag} fu definito dallo stesso autore come ``la cosa peggiore per internet''.
+			Di esempi di \emph{bloated design} ce ne sono centinaia:
+			\begin{itemize}
+				\item uso di musica con avvio automatico al caricamento.
+				\item effetti sconvolgenti che confondono l'utente.
+				\item siti di design in cui risulta complicata la navigazione.
+				\item e altro ancora...
+			\end{itemize}
+		
+		\subsection{Abusi multimediali}
+			
+			\subsubsection{Il 3D - Prima, dopo, ora}
+				Perché l'interfaccia 3D non è entrata nel mondo del web? Già nel 1922 fu proposto nella televisione ma non ebbe successo. Ancora una volta il limite dell'umano, la necessità di minimizzare lo sforzo computazionale determina il fallimento di una tecnologia proprio come la tastiera di Douglas Engelbart. 
+				Ma non limitiamoci solo al web, perché non evolvere l'interfaccia dei sistemi operativi in 3 dimensioni? Ci ha provato Anand Agarawala nel 2007, designer, (\url{https://www.ted.com/talks/anand_agarawala_demos_his_bumptop_desktop}) proponendo un'interfaccia virtuale che simula la fisica in 3 dimensioni. Questa interfaccia dopo essere stata comprata da Google è stata archiviata poiché la difficile interazione con esso si è rilevata più importante che ne la bellezza visiva e l'effetto "\emph{wow}".
+				Se possiamo evitiamo l'uso smoderato della multimedialità. 
+				
+				Per esempio il sito commerciale J. Crew lo sapeva bene quando per mostrare i propri vestiti non ha usato nessuno effetto; una scelta banale ma è quello che l'utente vuole.
+				
+				\subparagraph*{Morale:}
+				\begin{quote}
+					``Conviene offrire \emph{snapshot} 2D di oggetti 3D con complessità bassa"
+				\end{quote}
+				
+			\subsubsection{I plugin}
+				Una nota per i \emph{plugin}: soffrono di un problema fondamentale:
+				\begin{itemize}
+					\item Non sono standard e richiedono un'installazione quindi sforzo aggiuntivo.
+					\item Il comportamento dell'utente di fronte alla richiesta dell'installazione di un \emph{plugin} è ``non so cosa può succedere quindi non lo faccio'' (vedi gli aggiornamenti di Windows 10 ora nascosti all'utente).
+				\end{itemize}
+				In conclusione installare un \emph{plugin} fa perdere tempo (una richiesta di installazione di \emph{plugin} fa perdere il 90\% degli utenti non fidelizzati).
+			
+			\subsubsection{Dai plugin a Flash!}
+				Si potrebbe pensare che con \emph{Flash} i problemi dei \emph{plugin} non si hanno più. Sbagliato!
+				\begin{itemize}
+					\item \emph{Flash} è sempre un \emph{plugin} che necessita costanti aggiornamenti.
+					\item Tempo di caricamento aumentato.
+					\item Dà molti mezzi e più libertà espressiva, un vantaggio che diventa problema se si cade nel già visto \emph{bloated design}.
+				\end{itemize}
+				Evitare \emph{Flash} non significa evitare questi problemi. Anche con il recente HTML5 si può cadere in trappole come il \emph{bloated design}. Tutto dipende dall'uso.
+			
+			\subsubsection{I video}
+				Un altro strumento multimediale è l'uso dei video, oggi sempre più in espansione (si pensi a Facebook e al recentissimo Snapchat). Il principale vantaggio è lo stesso della televisione: basso costo computazionale. Di contro abbiamo la richiesta di più risorse (banda) e il timer collegato alla durata del video. 
+				\begin{itemize}
+					\item Tempo medio consigliato: 1 minuto.
+					\item Tempo massimo consigliato: 2 minuti.
+				\end{itemize}
+				Questi sono consigli generali ma molto dipende dal \textbf{target} che si ha, ad esempio youtube non ha questi limiti.
+		
+		\subsection{La Metafora visiva}
+			Altro problema che nel web produce disastri sull'usabilità dei siti web. La metafora visiva si ha quando l'utente è ingannato dall'aspetto grafico che dà aspettative illusorie e le tradisce. Per esempio:
+			\begin{itemize}
+				\item Il pulsante dello \emph{scroll} sostituito da un immagine.
+				\item L'immagine con scritto "clicca" non cliccabile.
+				\item Un testo in grassetto colorato che ricorda un link ma non lo è.
+				\item Pulsanti non cliccabili.
+				\item Immagini non riconosibili come immagini.
+				\item Pulsanti che sono parzialmente cliccabili.
+				\item ...
+			\end{itemize}
+			Le metafore visive tradite non hanno soltanto a che fare con link, pulsanti e immagini ma anche con \textbf{concetti}. Ad esempio dei concetti che significano qualcosa ma non sono intuibili subito.
+		
+		\subsection{I menu di navigazione}
+			Per quanto riguarda i menu dei siti internet abbiamo un vantaggio e uno svantaggio.
+			\begin{itemize}
+				\item (vantaggio) Essi sono usati già nei sistemi operativi per cui gli utenti hanno \textbf{familiarità} con essi.
+				\item (svantaggio) I menu del desktop sono costituiti da comandi, i menu del web \textbf{contengono informazioni} e quando c'è troppa informazione i menu "esplodono" in dimensione.
+			\end{itemize}
+			Nell'interazione con il mouse con questi menu molto grandi si hanno degli effetti disastrosi sull'usabilità.
+			\begin{itemize}
+				\item L'83\% degli utenti non c'entra la casella al primo colpo.
+				\item Il 53\% esce con il mouse e chiude il menu.
+			\end{itemize}
+
+			\subsubsection{Pathfinding}
+				Per capire queste percentuali analizziamo come gli utenti si muovono nelle pagine web, il così detto \emph{pathfinding}. L'algoritmo umano di spostamento da A a B è una linea retta, sforzo computazionale minimizzato. Nei menu con sotto-menu (\textbf{menu a cascata}) questo non funziona. Di fronte a questi tipi di menu il 92\% degli utenti esce dal menu con conseguente chiusura di esso. Per questo motivo i \textbf{menu a cascata} devono avere al massimo due livelli ed essere \emph{fault-tolerant} cosicché all'uscita del menu esso non si chiuda immediatamente creando frustrazione all'utente.
+			
+		\subsection{Il testo}
+			Torniamo a parlare del testo dopo aver visto che:
+			\begin{itemize}
+				\item il testo per il web è diverso dal testo normale,
+				\item deve essere semplice e sintetico
+				\item e non deve essere scritto in "politichese".
+			\end{itemize}
+			Vediamo ora altre regole che possono generare sensazioni negative se non rispettate.
+			\begin{enumerate}
+				\item Il testo deve \textbf{essere leggibile} con \textbf{dimensioni adatte}. La grandezza minima è di 10pt per ogni schermo per carattere.
+				\item Rinunciateci. A qualcuno non andrà bene il vostro testo. Sempre. Per andare incontro a questi mettere a disposizione delle opzioni visibili per il \emph{resize}. (Questo infatti è divenuto uno strumento \emph{zoom} dei browser)
+				\item Il testo è testo e deve essere riconosciuto come tale. Non usarlo mai come grafica con cambi di \emph{font}. Sempre avere un solo \emph{font} (al massimo 2) consistente per tutta la pagina, meglio per il sito. Il \emph{font} a cui gli utenti sono più abituati risulta \textbf{Verdana}.
+				\item Fare sempre attenzione al contrasto tra colore del testo e gli ulteriori sfondi delle pagine.
+			\end{enumerate}
+			
+			\subsubsection{Caps lock}
+				Per quanto riguarda il \emph{caps lock} dai dati è risultato più difficile da leggere del 10\%, principalmente perché non si è abituati.
+			\subsubsection{Immagini sostitutive}
+				Per le immagini invece che sostituiscono il testo abbiamo conseguenze molto negative:
+				\begin{itemize}
+					\item L'immagine \textbf{non scala} e aumenta il carico della pagina.
+					\item Non permette l'uso dello strumento \emph{past \& copy}.
+					\item Non interagisce con il motore di ricerca che lo considera immagine appunto. 
+				\end{itemize}
+				
+			\subsubsection{La maledizione Lorem Ipsum}
+				Il \emph{lorem ipsum} è una tecnica molto in voga nel web design. Permette infatti di strutturare un layout senza la presenza del testo effettivo che andrà inserito come contenuto. \emph{Lorem ipsum} infatti è un testo latino senza significato generato automaticamente che va a riempire le parti di testo di una pagina solo ai fini del layout.
+				Facendo così il layout visivo si stacca dal testo dando più priorità al layout quando invece è il testo la cosa più importante. Usare il \emph{lorem ipsum} molte volte crea siti con scarsa usabilità.
+				Il testo non è da considerare come un elemento di blocco per garantire l'usabilità ma deve essere strutturato secondo certe logiche (vedi ~\ref{sec:scanning}).
+				
+				\paragraph{L'effetto ghigliottina}
+					Usando il \emph{lorem ipsum} di fatto otterremo alcuni casi dove il testo sfora il layout quando inseriamo il vero testo. Oppure addirittura si ricorre ad uno \emph{scroll} interno alla pagina perché lo spazio previsto risulta insufficiente. 
+				
+			\subsubsection{Scanning}
+				\label{sec:scanning}
+				Cosa fanno gli utenti appena arrivano in una pagina web? Avviene lo \emph{scanning} veloce della pagina non per forza ordinato. Questo fa sì che l'utente si crei un'immagine mentale approssimata di come è fatta la pagina per minimizzare lo sforzo. Sarà poi l'input continuo dell'occhio a dare una mappa visiva informativa fatta meglio. Per questo motivo i grossi blocchi di testo richiedono troppo sforzo e durante la fase di \emph{scanning} il contenuto di essi non è percepito. Il testo non deve essere un singolo blocco ma deve avere una struttura propria.
+			
+			\subsubsection{Strutturazione}
+				Per strutturare bene il testo occorre:
+				\begin{enumerate}
+					\item Dividere il testo in blocchi.
+					\item Dare un titolo descrittivo ad ogni area del testo.
+					\item Usare liste \emph{itemize}.
+				\end{enumerate}
+				Questi accorgimenti aiutano la prima organizzazione/\emph{scanning} della pagina. Il titolo (\emph{keyword}) del blocco dovrebbe essere breve e pertinente. Si possono usare parole evidenziate (uso di \emph{bold}) che aiutano lo \emph{scanning} della pagina, tenendo conto che un utente memorizza fino a 6/7 \emph{keyword}.
+				I link tendono ad essere più evidenti delle \emph{keyword} sono assorbiti dallo \emph{scan} iniziale. Di seguito elenchiamo alcuni accorgimenti per i link:
+				\begin{itemize}
+					\item I link non devono essere troppo lunghi.
+					\item I link non devono avere nomi troppo simili per aiutare lo \emph{scanning}.
+					\item I link non devono essere mai del tipo "clicca qui", questo significa dare allo \emph{scanning} la \emph{keyword} "clicca qui" che non ha nessun significato, confonde l'utente e aumenta lo sforzo computazionale richiesto.
+				\end{itemize}
+				Le liste (terzo punto) aumentano la chiarezza e il grado di soddisfazione dell'utente (+47\%) si usano con almeno quattro elementi perché con meno affatico l'utente. Attenzione però! L'efficienza delle liste \textbf{decresce linearmente} con il numero di liste disposte verticalmente, mentre \textbf{decresce esponenzialmente} con le lista disposte orizzontalmente.
+				
+			\subsubsection{Blonde effect}
+				Il \emph{blonde effect} avviene quando si ha una percezione errata a causa dei limiti dell'utente. Durante lo \emph{scan} l'utente può percepire erroneamente alcune zone, bisogna quindi sempre porre attenzione a come lo \emph{scanning} agisce sulle nostre pagine.
+			Per capire perché "blonde" \url{https://www.youtube.com/watch?v=DctVteQDRIM}

@@ -1,0 +1,141 @@
+
+\documentclass[a4paper,11pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[english, italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[xindy]{imakeidx}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{etaremune}
+\usepackage{enumitem}
+\usepackage[toc,page]{appendix}
+\usepackage{verbatimbox}
+
+\usepackage[hidelinks, colorlinks=true]{hyperref}	
+\usepackage{bookmark}
+\usepackage{caption}
+\usepackage{subfig}
+
+\captionsetup{tableposition=top, figureposition=bottom, font=small}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+
+\usepackage{epigraph}
+
+
+\makeindex
+
+
+\includeonly{
+			sezioni/PrimiPassiNelWeb,%
+			sezioni/IlSitoWeb,%
+			sezioni/ProblemiDiUsabilita,%
+			sezioni/SitiEcommerce,%
+			sezioni/IlComportamentoDegliUtenti,%
+			sezioni/LaPubblicita,%
+			sezioni/LaRicerca,%
+			sezioni/LaVisibilita,%
+			sezioni/IlNomeGiusto,%
+			sezioni/LInformazioneEIlWebSemantico,%
+			sezioni/MobileWeb,%
+			sezioni/SocialWeb,%
+			appendici/AnalisiUsabilitaSito,
+			appendici/CookieLaw,%
+			%appendici/EyeTrackIII,%
+			%appendici/WebSpamTaxonomy,%
+			%appendici/LOD,%
+			%appendici/ScrivereRelazioneUsabilita,%
+			%appendici/AffrontareEsame%
+			}		
+		
+\begin{document}
+
+\title{Lezioni su Tecnologie Web 2}
+\author{Eduard Bicego}
+\date{Data uscita: 14-04-2016 \\ Ultima modifica: 28-02-2018}
+
+\maketitle
+
+%\input{sezioni/Dedica}
+
+\begin{abstract}
+	Il presente documento ha l'intento di raccogliere tutto il materiale presentato al corso di tecnologie web 2 dell'università di Padova tenuto dal professor Massimo Marchiori. Il documento ha lo scopo di dare le informazioni necessari ad ulteriore ricerca e approfondimento, come del resto le lezioni del corso. Nonostante gli sforzi questo documento è lungi dall'essere una guida completa su usabilità, motori di ricerca, web semantico e altro. \par
+	
+	Ho cercato di raggruppare e strutturare nel modo più logico le informazioni al fine di rendere più facile l'apprendimento cercando di mantenere intatto lo stile e il contenuto come è spiegato in aula. \par
+	
+	Il seguente documento non si prefigge lo scopo di contenere lo stretto indispensabile per l'esame e tanto meno di contenerne tutto il necessario. 
+	È usufruibile a tutti nella speranza di essere materiale utile e di supporto. Il simbolo asterisco tra parentesi tonde "(*)" significa che la sezione non è stata sviluppata sufficientemente. Qualsiasi \emph{fork} o incremento su tale documento è ben accetto purché rimangano i riferimenti a me e alle risorse citate in riferimenti.
+	\begin{flushright}
+		Buon viaggio virtuale \\
+		\emph{Eduard}
+	\end{flushright}
+	
+	
+\end{abstract}
+
+\hypersetup{linkcolor=black}
+\tableofcontents
+	%\newpage
+\listoffigures
+	%
+
+\newpage
+	\begin{center}
+		\emph{``Abbiamo Internet, il web, gli smartphone,\\
+		 ma chi li maneggia sono sempre gli stessi,\\
+		  siamo sempre noi uomini, \\
+		  con le nostre luci e le nostre ombre \\
+		  che sfidano ogni tempo e ogni epoca.''\\}
+	\end{center}
+	\begin{flushright}
+		\emph{Massimo Marchiori} - \emph{Meno Internet più Cabernet}	
+	\end{flushright}
+
+\newpage
+
+\hypersetup{linkcolor=blue, urlcolor=blue}
+
+\include{sezioni/PrimiPassiNelWeb}
+
+\include{sezioni/IlSitoWeb}
+
+\include{sezioni/ProblemiDiUsabilita}
+
+\include{sezioni/SitiEcommerce}
+
+\include{sezioni/IlComportamentoDegliUtenti}
+
+\include{sezioni/LaPubblicita}
+
+\include{sezioni/LaRicerca}
+
+\include{sezioni/LaVisibilita}
+
+\include{sezioni/IlNomeGiusto}
+
+\include{sezioni/LInformazioneEIlWebSemantico}
+
+\include{sezioni/MobileWeb}
+
+\include{sezioni/SocialWeb}
+
+
+\begin{appendices}
+
+\include{appendici/AnalisiUsabilitaSito}
+
+\include{appendici/CookieLaw}
+
+%\include{sezioni/}
+
+%\include{sezioni/}
+
+\end{appendices}
+
+%\newpage
+	\input{biblio/biblio}
+
+\end{document}	
