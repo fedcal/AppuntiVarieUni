@@ -1,0 +1,33 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+bin/
+bin
+
+# directory di anni passati
+06/
+07/
+08/
+09/
+10/
+11/
+12/
+13/
+14/
+14*/
+15/
+16/
+17/
+18/
+Esercitazioni Tutorato 2018/Esercitazione9/soluzione_provaC_praticheLegali/prog-4ed\.jar
+*.db
+*.ini
